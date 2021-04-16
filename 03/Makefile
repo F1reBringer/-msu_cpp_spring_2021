@@ -9,7 +9,7 @@ test: matrix.o test.o
 test.o: test.cpp matrix.h
 	$(CC) $(FLAGS) -c test.cpp
 
-alloc.o: matrix.cpp matrix.h
+matrix.o: matrix.cpp matrix.h
 	$(CC) $(FLAGS) -c matrix.cpp
 clean:
 	rm -rf *.o test
